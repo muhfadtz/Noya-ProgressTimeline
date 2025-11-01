@@ -41,10 +41,64 @@ const Icon: React.FC<IconProps> = ({ name, className, ...props }) => {
       </svg>
     ),
     logo: (
-      <svg {...iconProps} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 2L2 7V17L12 22L22 17V7L12 2Z" className="stroke-current text-primary" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="M2 7L12 12M12 22V12M22 7L12 12M17 4.5L7 9.5" className="stroke-current text-accent" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-      </svg>
+      <svg
+    {...iconProps}
+    viewBox="0 0 56 44"
+    xmlns="http://www.w3.org/2000/svg"
+    aria-label="Noya Logo"
+    role="img"
+  >
+    <title>Noya Logo</title>
+
+    {/* Badan tengah (hijau/primary) */}
+    <ellipse
+      cx="28"
+      cy="22"
+      rx="4.5"
+      ry="13"
+      className="fill-primary"
+    />
+
+    {/* Sayap kiri atas */}
+    <ellipse
+      cx="14"
+      cy="11.5"
+      rx="14"
+      ry="9.5"
+      transform="rotate(-45 14 11.5)"
+      className="fill-foreground"
+    />
+
+    {/* Sayap kanan atas */}
+    <ellipse
+      cx="42"
+      cy="11.5"
+      rx="14"
+      ry="9.5"
+      transform="rotate(45 42 11.5)"
+      className="fill-foreground"
+    />
+
+    {/* Sayap kiri bawah */}
+    <ellipse
+      cx="14"
+      cy="32.5"
+      rx="14"
+      ry="9.5"
+      transform="rotate(45 14 32.5)"
+      className="fill-foreground"
+    />
+
+    {/* Sayap kanan bawah */}
+    <ellipse
+      cx="42"
+      cy="32.5"
+      rx="14"
+      ry="9.5"
+      transform="rotate(-45 42 32.5)"
+      className="fill-foreground"
+    />
+  </svg>
     ),
     home: <svg {...iconProps} strokeWidth="1.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h7.5" /></svg>,
     plus: <svg {...iconProps} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M12 6v12m6-6H6" /></svg>,
