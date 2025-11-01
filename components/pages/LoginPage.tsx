@@ -5,6 +5,7 @@ import { useAuth } from '../../contexts';
 import { signIn, signUp, signInWithGoogle } from '../../services/firebase';
 import { Button, Input, Label, Spinner } from '../ui';
 import Icon from '../Icons';
+import brandLogo from "../../brand/galpek.png";
 
 const LoginPage: React.FC = () => {
   const [view, setView] = useState<'options' | 'login' | 'signup'>('options');
@@ -105,7 +106,7 @@ const LoginPage: React.FC = () => {
     <div className="flex flex-col h-screen bg-background">
         <div className="flex-grow flex items-center justify-center">
             <div className="text-center">
-                <img src="../brand/galpek.png" alt="Brand Logo" className="w-40 h-auto mx-auto"/>
+                <img src={brandLogo} alt="Logo" className="w-40 h-auto mx-auto" />
 
                 <h1 className="text-4xl font-bold mt-4 text-foreground">Noya</h1>
                 <p className="text-sm text-muted-foreground mt-1">Track your research journey, simply.</p>
