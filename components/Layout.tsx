@@ -54,7 +54,7 @@ const Navbar: React.FC = () => {
     return (
         <header className="hidden md:flex items-center justify-between p-4 border-b bg-card/80 backdrop-blur-sm sticky top-0 z-20">
             <Link to="/spaces" className="text-primary">
-                <img src="/galpek.png" alt="Logo" className="w-40 h-auto mx-auto"/>
+                <img src="/galpek.png" alt="Logo" className="w-10 h-auto mx-auto"/>
             </Link>
             <div className="flex items-center gap-4">
                 <ProfileDropdown />
