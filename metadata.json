@@ -1,0 +1,5 @@
+{
+  "name": "Noya",
+  "description": "Noya is a research progress tracking application with a multi-space system. Users can log in, create multiple research spaces, and record their progress reports and next steps within each space's unique timeline. The app supports dark/light themes and is fully responsive.",
+  "requestFramePermissions": []
+}
