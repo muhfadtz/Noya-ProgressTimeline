@@ -27,7 +27,6 @@ import {
 import type { UserProfile, Space, ProgressReport } from "../types";
 
 // === Konfigurasi Firebase ===
-console.log("Firebase API Key:", import.meta.env.VITE_FIREBASE_API_KEY);
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
